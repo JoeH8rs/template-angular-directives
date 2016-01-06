@@ -1,7 +1,8 @@
-xcopy "C:\Users\Joe Neuman\Desktop\template" /E /I
+cd C:\Users\Joe Neuman\Desktop\devmtn
 set /p UserInputPath= New Project Name?
 rename RenameNewProject %UserInputPath%
 cd %UserInputPath%
+xcopy "C:\Users\Joe Neuman\Desktop\template" /E /I
 git init
 git add .
 git commit -m "start"
